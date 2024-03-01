@@ -22,6 +22,7 @@ transform: rotate(-45deg);
 box-shadow: -10px 10px 90px  #f20044;
   animation: heart 0.6s linear infinite;
 }
+
 .heart1{
 height: 50px;
 width: 50px;
@@ -30,6 +31,14 @@ transform: rotate(-45deg);
 box-shadow: -10px 10px 90px  #f20044;
 margin-left: 100px;
 margin-right: 100px;
+}
+.heart2{
+height: 100px;
+width: 100px;
+background: #f20044;
+transform: rotate(-45deg);
+box-shadow: -10px 10px 90px  #f20044;
+  animation: heart 0.6s linear infinite;
 }
 @keyframes heart{
   0%{
@@ -69,6 +78,7 @@ right: -50%;
 border-radius: 175px;
 box-shadow: 10px 10px 90px  #f20044;
 }
+
 .heart1::before{
   content: '';
   position: absolute;
@@ -84,6 +94,26 @@ box-shadow: -10px -10px 90px  #f20044;
   position: absolute;
   height: 50px;
 width: 50px;
+background: #f20044;
+right: -50%;
+border-radius: 175px;
+box-shadow: 10px 10px 90px  #f20044;
+}
+.heart2::before{
+  content: '';
+  position: absolute;
+  height: 100px;
+width: 100px;
+background: #f20044;
+top: -50%;
+border-radius: 175px;
+box-shadow: -10px -10px 90px  #f20044;
+}
+.heart2::after{
+  content: '';
+  position: absolute;
+  height: 100px;
+width: 100px;
 background: #f20044;
 right: -50%;
 border-radius: 175px;
@@ -117,4 +147,91 @@ font-size: 25px;
   justify-content: center;
   margin: 0;
   align-items: center;
+}
+
+
+.footer{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+
+
+
+
+
+
+@media (max-width:900px){
+  @import url('https://fonts.googleapis.com/css2?family=Allura&family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+body{
+  margin: 0;
+  padding: 0;
+  background: #0b1522;
+}
+.content{
+  margin: 0;
+  padding: 0;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0b1522;
+}
+
+@keyframes heart{
+  0%{
+    transform: rotate(-45deg) scale(1.07);
+
+  }
+}
+@keyframes heart{
+  80%{
+    transform: rotate(-45deg) scale(1.0);
+
+  }
+}
+@keyframes heart{
+  100%{
+    transform: rotate(-45deg) scale(0.8);
+
+  }
+}
+
+.sorry-letter{
+  background-color: wheat;
+  padding: 25px;
+border-radius: 25px;
+font-family: sans-serif;
+font-weight: bolder;
+margin: 50px;
+}
+.sorry-letter p {
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  font-size: 1.6rem;
+  animation: typing 1s forwards;
+font-size: 12px;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+.nav ul{
+  background-color: aquamarine;
+  font-family: allura;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  align-items: center;
+}
+.heart{
+  display: none;
+}
+.heart1{
+  display: none;
+}
 }
